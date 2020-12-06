@@ -44,7 +44,7 @@ export default function App() {
         <input
           type="text"
           onChange={() => inputHandler()}
-          style={{ width: "70%", padding: "0.4rem" }}
+          style={{ padding: "0.4rem" }}
           placeholder="Paste your emoji here!"
         />
         <p style={{ marginTop: "2rem", marginBottom: "0", fontSize: "2rem" }}>
