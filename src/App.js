@@ -2,13 +2,13 @@ import React from "react";
 import "./styles.css";
 
 export default function App() {
-  var userName = prompt("Enter Name");
+  function likeBtnHandler() {
+    console.log("liked");
+  }
   return (
     <div className="App">
       <h1 className="mainHeading">Emoji Translator</h1>
-      <h1>
-        Welcome <span Style="Color: blue;">{userName}</span>
-      </h1>
+      <button onClick={likeBtnHandler}> Like </button>
     </div>
   );
 }
