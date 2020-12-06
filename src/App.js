@@ -45,7 +45,7 @@ export default function App() {
   return (
     <div className="App">
       <nav>
-        <h1 className="mainHeading">Emoji Translator</h1>
+        <h1 className="mainHeading">Fruits Emoji Translator</h1>
       </nav>
       <section>
         <input
@@ -54,7 +54,7 @@ export default function App() {
           style={{ padding: "0.4rem" }}
           placeholder="Paste your emoji here!"
         />
-        <p style={{ marginTop: "2rem", marginBottom: "0", fontSize: "2rem" }}>
+        <p style={{ marginTop: "2rem", marginBottom: "0", fontSize: "4rem" }}>
           {emoji}
         </p>
         <p style={{ marginTop: "0rem", fontSize: "2rem", fontWeight: "bold" }}>
@@ -66,7 +66,7 @@ export default function App() {
               key={item}
               style={{
                 margin: "1 rem",
-                fontSize: "x-large",
+                fontSize: "2rem",
                 cursor: "pointer",
                 padding: "1rem"
               }}
@@ -78,7 +78,15 @@ export default function App() {
         })}
       </section>
       <footer className="footer">
-        <p className="footer-title"> Made with love by rushi. </p>
+        <p className="footer-title">
+          {" "}
+          Made with{" "}
+          <span role="img" aria-label="love">
+            {" "}
+            ❤️{" "}
+          </span>
+          by rushi.{" "}
+        </p>
       </footer>
     </div>
   );
