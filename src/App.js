@@ -42,7 +42,7 @@ export default function App() {
       </nav>
       <input
         type="text"
-        onChange={() => inputHandler(e)}
+        onChange={() => inputHandler()}
         style={{ width: "70%", padding: "0.4rem" }}
         placeholder="Paste your emoji here!"
       />
@@ -55,7 +55,7 @@ export default function App() {
       {emojiList.map((item) => {
         return (
           <span
-            key="item"
+            key={item}
             style={{
               fontSize: "x-large",
               cursor: "pointer",
@@ -67,8 +67,8 @@ export default function App() {
           </span>
         );
       })}
-      <footer class="footer">
-        <p class="footer-title">Made with ❤️ by rushi.</p>
+      <footer className="footer">
+        <p className="footer-title"> Made with love by rushi. </p>
       </footer>
     </div>
   );
