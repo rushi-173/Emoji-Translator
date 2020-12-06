@@ -68,7 +68,8 @@ export default function App() {
                 margin: "1 rem",
                 fontSize: "2rem",
                 cursor: "pointer",
-                padding: "1rem"
+                padding: "1rem",
+                lineHeight:"4rem"
               }}
               onClick={() => clickEmojiHandler(item)}
             >
