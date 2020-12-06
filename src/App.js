@@ -14,21 +14,62 @@ var emojiDictionary = {
   "🏐": "Volleyball"
 };
 
+let emojiList = Object.keys(emojiDictionary);
+
 export default function App() {
-  var [emoji, setEmoji] = useState();
+  var [emoji, setEmoji] = useState("");
+  var [meaning, setMeaning] = useState("");
+
   function inputHandler(event) {
-    setEmoji(event.target.value);
-    if (emoji in emojiDictionary) {
-      console.log(emojiDictionary[emoji]);
+    const inEmoji = event.target.value;
+    setEmoji(inEmoji);
+    if (inEmoji in emojiDictionary) {
+      setMeaning(emojiDictionary[inEmoji]);
     } else {
-      console.log("Dont know about this.");
+      setMeaning("I don't know about this one.");
     }
   }
+
+  function clickEmojiHandler(inputItem) {
+    setEmoji(inputItem);
+    setMeaning(emojiDictionary[inputItem]);
+  }
+
   return (
     <div className="App">
-      <h1 className="mainHeading">Emoji Translator</h1>
-      <input type="text" onChange={() => inputHandler(event)} />
-      <p>{emoji}</p>
+      <nav>
+        <h1 className="mainHeading">Emoji Translator</h1>
+      </nav>
+      <input
+        type="text"
+        onChange={() => inputHandler(e)}
+        style={{ width: "70%", padding: "0.4rem" }}
+        placeholder="Paste your emoji here!"
+      />
+      <p style={{ marginTop: "2rem", marginBottom: "0", fontSize: "2rem" }}>
+        {emoji}
+      </p>
+      <p style={{ marginTop: "0rem", fontSize: "2rem", fontWeight: "bold" }}>
+        {meaning}
+      </p>
+      {emojiList.map((item) => {
+        return (
+          <span
+            key="item"
+            style={{
+              fontSize: "x-large",
+              cursor: "pointer",
+              padding: "0.5rem"
+            }}
+            onClick={() => clickEmojiHandler(item)}
+          >
+            {item}
+          </span>
+        );
+      })}
+      <footer class="footer">
+        <p class="footer-title">Made with ❤️ by rushi.</p>
+      </footer>
     </div>
   );
 }

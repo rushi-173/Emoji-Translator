@@ -1,8 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+:root {
+  --primary-color: #ff6f00;
+  --secondary-color: #00b0ff;
+  --dark-grey: #424242;
+  --light-grey: #eeeeee;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-bottom: 3rem;
+  background-color: var(--primary-color);
 }
 
 .mainHeading {
-  color: aqua;
+  color: white;
+  padding: 0.5rem;
+}
+
+.footer {
+  margin-top: 3rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.footer-title {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
 }
