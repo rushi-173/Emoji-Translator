@@ -10,16 +10,9 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
 }
 
 nav {
-  left: 0;
-  top: 0;
-  width: 100%;
   margin-bottom: 3rem;
   background-color: var(--primary-color);
 }
@@ -31,9 +24,6 @@ nav {
 
 .footer {
   margin-top: 3rem;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: var(--primary-color);
 }
 
