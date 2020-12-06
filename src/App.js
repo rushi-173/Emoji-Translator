@@ -43,7 +43,7 @@ export default function App() {
       <section>
         <input
           type="text"
-          onChange={() => inputHandler()}
+          onChange={(item) => inputHandler(item)}
           style={{ padding: "0.4rem" }}
           placeholder="Paste your emoji here!"
         />
