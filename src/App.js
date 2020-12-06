@@ -62,7 +62,7 @@ export default function App() {
                 cursor: "pointer",
                 padding: "0.5rem"
               }}
-              onClick={() => clickEmojiHandler(item)}
+              onClick={(item) => clickEmojiHandler(item)}
             >
               {item}
             </span>
