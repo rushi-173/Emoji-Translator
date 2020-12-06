@@ -2,16 +2,23 @@ import React, { useState } from "react";
 import "./styles.css";
 
 var emojiDictionary = {
-  "😊": "Happy",
-  "😔": "Sad",
-  "❤️": "Love",
-  "👋": "Hello",
-  "🧠": "Brain",
-  "🔥": "Fire",
-  "⚽": "FootBall",
-  "⚾": "Baseball",
-  "🏀": "Basketball",
-  "🏐": "Volleyball"
+  "🍇": "Grapes",
+  "🍈": "Melon",
+  "🍉": "Watermelon",
+  "🍊": "Tangerine",
+  "🍋": "Lemon",
+  "🍌": "Banana",
+  "🍍": "Pineapple",
+  "🥭": "Mango",
+  "🍎": "Red Apple",
+  "🍏": "Green Apple",
+  "🍐": "Pear",
+  "🍑": "Peach",
+  "🍒": "Cherries",
+  "🍓": "Strawberry",
+  "🥝": "Kiwi Fruit",
+  "🍅": "Tomato",
+  "🥥": "Coconut"
 };
 
 let emojiList = Object.keys(emojiDictionary);
